@@ -1,0 +1,4 @@
+certbot_email: mail@deworker.pro /// mykola.blyzniuk.it@gmail.com
+certbot_hosts:
+  - demo-auction.deworker.pro /// my host
+  - api.demo-auction.deworker.pro // my host
