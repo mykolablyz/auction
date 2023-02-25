@@ -1,0 +1,25 @@
+{
+    "name": "mykolablyz/demo-auction",
+    "description": "Pet project",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Mykola Blyzniuk",
+            "email": "mykola.blyzniuk.it@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4",
+        "slim/psr7": "0.6",
+        "slim/slim": "4.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}
