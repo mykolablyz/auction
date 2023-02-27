@@ -15,3 +15,9 @@ docker-compose run --rm api-php-cli composer dump-autoload
 docker-compose run --rm api-php-cli composer require ext-json
 
 docker-compose run --rm api-php-cli php bin/app.php
+
+docker-compose run --rm api-php-cli php --version
+
+docker-compose run --rm api-php-cli ip route
+
+docker-compose exec api-php-fpm ping host.docker.internal
