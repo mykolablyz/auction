@@ -10,6 +10,10 @@ docker-compose run --rm api-php-cli composer require slim/slim slim/psr7
 
 docker-compose run --rm api-php-cli composer install
 
+docker-compose run --rm api-php-cli composer update
+
+docker-compose run --rm api-php-cli composer require
+
 docker-compose run --rm api-php-cli composer dump-autoload
 
 docker-compose run --rm api-php-cli composer require ext-json
@@ -21,3 +25,8 @@ docker-compose run --rm api-php-cli php --version
 docker-compose run --rm api-php-cli ip route
 
 docker-compose exec api-php-fpm ping host.docker.internal
+
+site_api-php-cli2_1 --remove-orphans
+
+docker-compose run --rm api-php-cli ./vendor/bin/psalm --init src 1
+
